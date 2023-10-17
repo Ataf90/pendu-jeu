@@ -12,7 +12,7 @@ const arrayMotMystere = devineStocke.split('');
 console.log(arrayMotMystere);
 let laVie;
 let compteVraiDevine;
-let espace;
+let espace = "_";
 let porteMots;
 //------------------crée mon alératoire----------
 // function porterMonAleratoire() {
