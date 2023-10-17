@@ -2,14 +2,37 @@
   box-sizing: border-box;
   margin: 0 auto;
   padding: 0;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
+
 main {
-  width: 100%;
-  padding: 23px;
-  height: 100vh;
-  border: 1px solid blue;
+  margin: 0 auto;
+  width: 500px;
 }
 header {
   text-align: center;
+}
+.container {
+  padding: 10%;
+  /* border: 1px solid black; */
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.alpha-btn {
+  padding: 15px;
+  flex-wrap: wrap;
+}
+.mot-secret {
+  border: 1px solid rebeccapurple;
+  width: 50%;
+  height: 43px;
+  text-align: center;
+  margin-top:40px ;
+}
+.img-pendu{
+  background-image: '../img/pendu10.JPG';
+  width: 100%;
+  display:inline-block
 }
