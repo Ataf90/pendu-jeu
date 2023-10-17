@@ -1,31 +1,5 @@
 //------------crée mon tableau de alpha lists-----------
-let alphabet = [
-  "a",
-  "b",
-  "c",
-  "d",
-  "e",
-  "f",
-  "g",
-  "h",
-  "i",
-  "j",
-  "k",
-  "l",
-  "m",
-  "n",
-  "o",
-  "p",
-  "q",
-  "r",
-  "s",
-  "t",
-  "u",
-  "v",
-  "w",
-  "x",
-  "y",
-  "z",
+let alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",
 ];
 
 //--------Crée mes paramètres ------------
@@ -33,31 +7,37 @@ const devineMots = ['dragon', 'flemme', 'bleu', 'coder', 'manger', 'jouer', 'dor
   'huile', 'angle', 'armoire', 'banc', 'bureau', 'cabinet', 'carreau', 'chaise', 'classe', 'coin', 'couloir', 'dossier'];
 let mot;
 let devine = [];
-let devineStocke = "dauphin";
-const arrayMotMystere = devineStocke.split('')
+let devineStocke = "chaise";
+const arrayMotMystere = devineStocke.split('');
 console.log(arrayMotMystere);
 let laVie;
 let compteVraiDevine;
 let espace;
 let porteMots;
 //------------------crée mon alératoire----------
-function porterMonAleratoire() {
-  return  motAleratoire = Math.floor(Math.random() * devineMots.length);
-}
+// function porterMonAleratoire() {
+//   motAleratoire = motAleratoire.upperCase();
+//   return motAleratoire = Math.floor(Math.random() * devineMots.length);
+// }
+// let propreAleratoire = porterMonAleratoire();
 
-console.log(motAleratoire);
+// console.log(motAleratoire);
 /// ----------crée en cadren 'affichage------
 let main = document.createElement("main");
 document.body.appendChild(main);
+//--------------crée mon imgae-------------
 let imgpendu = document.createElement("image");
 imgpendu.classList.add("img-pendu");
-imgpendu.src = "../img/pendu1.JPG"
 main.appendChild(imgpendu);
 //-----------crée mon motSécret--------------
 let motSecret = document.createElement("div");
 motSecret.classList.add("mot-secret");
 main.appendChild(motSecret);
-
+//-----------crée celule-----------------
+let celule = document.createElement("div");
+celule.classList.add("celule-devine");
+celule.innerText = "_";
+motSecret.appendChild(celule);
 //-------------crée container---------------
 let container = document.createElement("div");
 container.classList.add("container");
@@ -87,7 +67,7 @@ examiner.forEach((unBtn, index) => {
         console.log("il est examiner -c'est  OK");
         console.log(unBtn.innerText);
       } else {
-        console.log("c'est n'ai pas convient de mon tableau ");
+        console.log("c'est n'ai pas convient de mon tableau list ");
       }
     }
     console.log(devine);

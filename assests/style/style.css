@@ -2,7 +2,12 @@
   box-sizing: border-box;
   margin: 0 auto;
   padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, c
+
   /* border: 1px solid red; */
+}
+body {
+  background-color: teal;
 }
 
 main {
@@ -11,6 +16,7 @@ main {
 }
 header {
   text-align: center;
+  color: white;
 }
 .container {
   padding: 10%;
@@ -23,16 +29,25 @@ header {
 .alpha-btn {
   padding: 15px;
   flex-wrap: wrap;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    font-size: 15px;
 }
 .mot-secret {
-  border: 1px solid rebeccapurple;
+  border: 1px black double;
   width: 50%;
   height: 43px;
   text-align: center;
-  margin-top:40px ;
+  margin-top: 40px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
-.img-pendu{
-  background-image: '../img/pendu10.JPG';
-  width: 100%;
-  display:inline-block
+image {
+  margin-top: 40px;
+  background-image: url(../img/pendu_0.jpg);
+  padding: 50%;
+  display: block;
+  border-radius: 23px;
+  box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
 }
