@@ -29,13 +29,14 @@ image {
   box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
 }
 .container {
+  display: flex;
+  justify-content: center;
   padding: 10%;
   /* border: 1px solid black; */
   border-radius: 40px;
-  display: flex;
-  justify-content: center;
 }
 .mot-secret {
+  display: flex;
   border: 1px black double;
   width: 50%;
   height: 43px;
@@ -44,15 +45,17 @@ image {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
   border-radius: 12px;
+  color:white;
 }
 .alpha-btn {
-  padding: 15px;
+  padding: 18px;
+  text-align: center;
   flex-wrap: wrap;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   font-size: 19px;
-
+  width: 1px;
 }
 
 @media screen {
