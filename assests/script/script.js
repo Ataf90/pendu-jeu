@@ -23,7 +23,7 @@ let mots = [
   "palindrome",
   "carburateur",
 ];
-
+// ------------- généré mon mot aleéatoire
 let motAleatoire = mots[Math.floor(Math.random() * mots.length)];
 motAleatoire = motAleatoire.toUpperCase();
 const arrayMotAleatoire = motAleatoire.split("");
@@ -31,7 +31,7 @@ console.log(arrayMotAleatoire);
 let lettresRestantes = motAleatoire.length;
 console.log(motAleatoire);
 
-// ----------------------------------------------------------------------
+// ------------------------------crée mes paramètres----------------------------------------
 
 let lettresClavier = [
   "A",
@@ -71,15 +71,15 @@ let nombreDeVies = 5;
 let trouve = false;
 const pendu = [
   "/assests/img/deux.png",
-  "./assets/img/trois.png",
-  "./assets/img/quatre.png",
-  "./assets/img/cinq.png",
-  "./assets/img/six.png",
-  "./assets/img/sept.png",
+  "/assests/img/trois.png",
+  "/assests/img/quatre.png",
+  "/assests/img/cinq.png",
+  "/assests/img/six.png",
+  "/assests/img/sept.png",
 ];
 
 let indexImage = 0;
-// -------------------Clavier ---------------------------------------------
+//---------------attacher mes element html avec js ------------------------------
 
 let main = document.getElementById("main");
 let cadreImage = document.getElementById("pendu");
@@ -149,7 +149,7 @@ essai.forEach((unBouton) => {
     console.log(nombreDeVies);
     console.log("nombre de vies = " + nombreDeVies);
 
-    if (nombreDeVies == 0) {
+    if (nombreDeVies === 0) {
       resultat = "PERDU";
       console.log("PERDU");
       image2.setAttribute("src", "/assests/img/perdu.png");
